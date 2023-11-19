@@ -50,7 +50,7 @@ function FillVariables() {
 		ArrayLength = rl1
 		ArrayLength = ArrayLength * 1
 
-		readline.question(`\x1b[32mВведіть граничне число для рандомайзера чисел:\x1b[0m `, rl2 => {
+		readline.question(`\x1b[32mВведіть граничне число для рандомайзера:\x1b[0m `, rl2 => {
 			MaxNumberToRandom = rl2
 			MaxNumberToRandom = MaxNumberToRandom * 1
 
