@@ -46,30 +46,28 @@ function FillVariables() {
 		input: process.stdin,
 		output: process.stdout,
 	})
-	readline.question(`Введіть бажаний розмір масиву: `, rl1 => {
+	readline.question(`\x1b[32mВведіть бажаний розмір масиву:\x1b[0m `, rl1 => {
 		ArrayLength = rl1
 		ArrayLength = ArrayLength * 1
 
-		readline.question(`Введіть граничне число для рандомайзера чисел: `, rl2 => {
+		readline.question(`\x1b[32mВведіть граничне число для рандомайзера чисел:\x1b[0m `, rl2 => {
 			MaxNumberToRandom = rl2
 			MaxNumberToRandom = MaxNumberToRandom * 1
 
-			readline.question(`Введіть число для пошуку у масиві: `, rl3 => {
+			readline.question(`\x1b[32mВведіть число для пошуку у масиві:\x1b[0m `, rl3 => {
 				target = rl3
 				target = target * 1
-
 				readline.close()
-				
 	RandomNumbersForArr(arr)
 	BubbleSort(arr)
 	let searchResult = binarySearch(arr, target)
 
 	console.table(arr)
 		if (searchResult == -1) {
-			console.log(`Елемент ${target} не знайдено :(`)
+			console.log(`\x1b[34mЕлемент ${target} не знайдено :(\x1b[0m`)
 		} else {
 			searchResult++
-			console.log(`Елемент ${target} знайдено`)
+			console.log(`\x1b[34mЕлемент ${target} знайдено\x1b[0m`)
 		}
 
 			})
