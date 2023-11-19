@@ -58,6 +58,8 @@ function FillVariables() {
 				target = rl3
 				target = target * 1
 
+				readline.close()
+				
 	RandomNumbersForArr(arr)
 	BubbleSort(arr)
 	let searchResult = binarySearch(arr, target)
